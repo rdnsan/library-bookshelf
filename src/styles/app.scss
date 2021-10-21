@@ -1,0 +1,13 @@
+@import 'variables/variables';
+@import 'mixins/mixins';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $light;
+  font-family: $font-primary;
+}
