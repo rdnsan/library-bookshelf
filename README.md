@@ -1,7 +1,3 @@
-# Library Bookshelf
-
-Simple App for Manage Your Bookshelf
-
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. :heart:
@@ -46,10 +42,16 @@ $ yarn build
 
 | Palette    | Hex       | RGB           | HSL            | ![Color Picker Boxes](https://draculatheme.com/static/img/color-boxes/eyedropper.png) |
 | ---------- | --------- | ------------- | -------------- | ------------------------------------------------------------------------------------- |
-| Background | `#282a36` | `40 42 54`    | `231° 15% 18%` | ![Background Color](https://draculatheme.com/static/img/color-boxes/background.png)   |
-| Cyan       | `#8be9fd` | `139 233 253` | `191° 97% 77%` | ![Cyan Color](https://draculatheme.com/static/img/color-boxes/cyan.png)               |
-| Green      | `#50fa7b` | `80 250 123`  | `135° 94% 65%` | ![Green Color](https://draculatheme.com/static/img/color-boxes/green.png)             |
-| Orange     | `#ffb86c` | `255 184 108` | `31° 100% 71%` | ![Orange Color](https://draculatheme.com/static/img/color-boxes/orange.png)           |
+| Background | `#f6f8fa` | `246 248 250` | `210° 29% 97%` | ![F6F8FA](https://via.placeholder.com/16/F6F8FA?text=+)                               |
+| Green      | `#6fdcbf` | `111 220 191` | `164° 61% 65%` | ![6FDCBF](https://via.placeholder.com/16/6FDCBF?text=+)                               |
+| Dark Green | `#00736a` | `0 115 106`   | `175° 100% 23%`| ![00736A](https://via.placeholder.com/16/00736A?text=+)                               |
+| Grey       | `#ced6e0` | `206 214 224` | `213° 23% 84%` | ![CED6E0](https://via.placeholder.com/16/CED6E0?text=+)                               |
+| Dark       | `#404040` | `64 64 64`    | `0° 0% 25%`    | ![404040](https://via.placeholder.com/16/404040?text=+)                               |
+| Coffee     | `#77655a` | `119 101 90`  | `23° 14% 41%`  | ![77655A](https://via.placeholder.com/16/77655A?text=+)                               |
+
+---
+
+If you found this project useful, please consider giving it a <img src="https://git.io/JUn8T" height="14"> ! If you have any questions or feedback, open an issue and I will get back to you :&#8203;)
 
 ## License
 
