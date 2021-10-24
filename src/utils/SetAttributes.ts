@@ -1,7 +1,6 @@
 /* eslint-disable guard-for-in */
-/* eslint-disable no-restricted-syntax */
 // prettier-ignore
-const setAttributes = (element: HTMLMetaElement | HTMLLinkElement, attribute: any) => {
+const setAttributes = (element: HTMLMetaElement | HTMLLinkElement, attribute: any): void => {
   for (const key in attribute) {
     element.setAttribute(key, attribute[key]);
   }
