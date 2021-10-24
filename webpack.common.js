@@ -23,6 +23,14 @@ module.exports = {
         ],
       },
       {
+        test: /\.(jpe?g|png|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
+      {
         test: /\.css$/,
         use: [
           {
