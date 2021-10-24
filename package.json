@@ -1,6 +1,6 @@
 {
   "name": "library-bookshelf",
-  "version": "0.1.0",
+  "version": "0.9.4",
   "description": "Simple App for Manage Your Bookshelf",
   "private": true,
   "main": "index.js",
@@ -28,6 +28,7 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.2",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.4.0",
     "sass": "^1.43.2",
     "sass-loader": "^12.2.0",
