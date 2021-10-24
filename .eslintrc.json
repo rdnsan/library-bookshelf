@@ -16,6 +16,13 @@
     "linebreak-style": "off",
     "import/no-unresolved": "off",
     "import/extensions": "off",
-    "import/no-extraneous-dependencies": "off"
+    "class-methods-use-this": "off",
+    "no-restricted-syntax": "off",
+    "no-restricted-globals": "off",
+    "import/no-mutable-exports": "off",
+    "import/no-extraneous-dependencies": "off",
+    "comma-dangle": "off",
+    "no-console": "off",
+    "no-alert": "off"
   }
 }
