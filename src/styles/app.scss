@@ -11,3 +11,418 @@ body {
   background-color: $light;
   font-family: $font-primary;
 }
+
+.alert {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: fit-content;
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 0.8;
+  transition: opacity 0.6s;
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-size: 28px;
+    float: right;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: $green;
+  h1 {
+    font-size: 4vw;
+    font-weight: 900;
+    text-align: center;
+    color: $dark;
+    padding: 10px 20px;
+    margin-bottom: 4rem;
+  }
+}
+
+#content {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  margin-top: -70px;
+}
+
+.container {
+  padding: 0 35px;
+  padding-bottom: 70px;
+}
+
+.is-check {
+  color: #198754 !important;
+}
+
+// Input Book
+.input-book {
+  max-width: 570px;
+  background: #fff;
+  padding: 35px;
+  margin: auto;
+  margin-bottom: 4rem;
+  border-radius: 10px;
+  box-shadow: 0 30px 60px 0 rgba(#c1c1c1, 0.4);
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: $dark;
+    text-align: center;
+    padding: 0 20px 20px 20px;
+  }
+
+  .input-group {
+    margin-bottom: 20px;
+
+    label {
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      color: $dark;
+      margin-bottom: 5px;
+      user-select: none;
+    }
+
+    input {
+      width: 100%;
+      height: 50px;
+      padding: 5px 15px;
+      font-size: 18px;
+      background: none;
+      color: $dark;
+      border: 1px solid $grey;
+      border-radius: 5px;
+      box-shadow: none;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        border-color: $green;
+      }
+      &:focus {
+        outline: none;
+        border-color: $green;
+        box-shadow: 0 10px 20px -13px rgba(#207565, 0.35);
+      }
+    }
+  }
+
+  .input-check {
+    input {
+      width: 20px;
+      height: 20px;
+    }
+
+    label {
+      position: relative;
+      top: -4px;
+      padding-left: 10px;
+      color: #dc3545;
+    }
+  }
+
+  button {
+    width: 100%;
+    height: 55px;
+    background: $green;
+    color: $dark;
+    font-size: 22px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 3px 10px 20px 0 rgba($green, 0.3);
+    transition: all 0.3s ease;
+    &:hover {
+      background: darken($green, 10%);
+    }
+  }
+}
+
+// Search Book
+.search-book {
+  max-width: 570px;
+  padding: 35px;
+  margin: auto;
+  margin-bottom: 4rem;
+  border-radius: 5px;
+
+  label {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    color: $dark;
+    margin-bottom: 1rem;
+  }
+
+  input {
+    width: 100%;
+    height: 45px;
+    padding: 5px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $dark;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.1);
+    &::placeholder {
+      font-size: 1.3rem;
+      transform: scaleX(-1);
+    }
+  }
+}
+
+// List Book
+.list-book {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  border-radius: 8px;
+
+  #uncompleted {
+    @include card-container(lighten($coffee, 50), $coffee);
+    margin-right: 10px;
+
+    h2 {
+      color: $coffee;
+      padding: 0 0 1.5rem 0;
+    }
+
+    .card {
+      @include card($coffee);
+      &:hover {
+        transform: translateX(6px);
+      }
+
+      .book-info {
+        h3 {
+          color: $coffee;
+          margin-bottom: 10px;
+        }
+        p {
+          margin-bottom: 10px;
+        }
+      }
+
+      .action-button {
+        padding: 5px 0;
+        .check-btn {
+          @include action-button-icon(
+            'https://cloud.digitboxtech.com/static/check.svg'
+          );
+          @include action-button();
+        }
+
+        .trash-btn {
+          @include action-button-icon(
+            'https://cloud.digitboxtech.com/static/trash.svg'
+          );
+          @include action-button();
+        }
+
+        .check-btn,
+        .trash-btn {
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+
+  #completed {
+    @include card-container(lighten($green, 20), $dark-green);
+    margin-left: 10px;
+
+    h2 {
+      color: $dark-green;
+      padding: 0 0 1.5rem 0;
+    }
+
+    .card {
+      @include card($dark-green);
+      &:hover {
+        transform: translateX(6px);
+      }
+
+      .book-info {
+        h3 {
+          color: $dark-green;
+          margin-bottom: 10px;
+        }
+        p {
+          margin-bottom: 10px;
+        }
+      }
+
+      .action-button {
+        padding: 5px 0;
+        .undo-btn {
+          @include action-button-icon(
+            'https://cloud.digitboxtech.com/static/undo.svg'
+          );
+          @include action-button();
+        }
+
+        .trash-btn {
+          @include action-button-icon(
+            'https://cloud.digitboxtech.com/static/trash.svg'
+          );
+          @include action-button();
+        }
+
+        .undo-btn,
+        .trash-btn {
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 569px) {
+  .alert {
+    top: 10px;
+    right: 0;
+    margin: 0 10px;
+  }
+
+  header {
+    height: 200px;
+    h1 {
+      font-size: 9vw;
+    }
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .input-book {
+    padding: 25px;
+    .input-group {
+      input {
+        height: 44px;
+      }
+    }
+  }
+
+  .search-book {
+    padding: 10px;
+  }
+
+  .list-book {
+    flex-direction: column;
+    padding-bottom: 2.5rem;
+
+    #uncompleted {
+      width: 100%;
+      padding: 20px;
+      margin-bottom: 2rem;
+
+      .card {
+        flex-direction: column;
+        align-items: flex-start;
+        &:hover {
+          transform: translateX(0);
+        }
+
+        .action-button {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+        }
+      }
+    }
+
+    #completed {
+      width: 100%;
+      padding: 20px;
+      margin-left: 0;
+
+      .card {
+        flex-direction: column;
+        align-items: flex-start;
+        &:hover {
+          transform: translateX(0);
+        }
+
+        .action-button {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  header {
+    h1 {
+      font-size: 7vw;
+    }
+  }
+
+  .input-book {
+    h2 {
+      font-size: 1.7rem;
+    }
+    .input-group {
+      label {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .search-book {
+    label {
+      font-size: 1.7rem;
+    }
+  }
+
+  .list-book {
+    flex-direction: column;
+    padding-bottom: 0;
+
+    #uncompleted {
+      width: 95%;
+      padding: 25px;
+      margin-right: 0;
+      margin-bottom: 4rem;
+    }
+
+    #completed {
+      width: 95%;
+      padding: 25px;
+      margin-left: 0;
+    }
+  }
+}
+
+@media (min-width: 902px) and (max-width: 1024px) {
+  .list-book {
+    align-items: inherit;
+  }
+}
