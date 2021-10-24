@@ -47,7 +47,7 @@ const addBookToCompleted = (bookElement: any) => {
   const listCompleted = document.getElementById(Config.COMPLETED_LIST_BOOK);
   const bookTitle = bookElement.firstChild.querySelector('h3')?.innerText;
   const bookAuthor = bookElement.firstChild.querySelector('p:first-of-type > span')?.innerText;
-  const bookYear = bookElement.firstChild.querySelector('p:first-of-type > span')?.innerText;
+  const bookYear = bookElement.firstChild.querySelector('p:last-of-type > span')?.innerText;
 
   const newBook: any = makeBook(bookTitle, bookAuthor, bookYear, true);
   const book: any = findBook(bookElement.bookId);
