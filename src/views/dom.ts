@@ -3,6 +3,11 @@ import InputBook from '../components/InputBook';
 import SearchBook from '../components/SearchBook';
 import ListBook from '../components/ListBook';
 
+const root = document.createElement('div');
+root.setAttribute('id', 'root');
+
+document.body.appendChild(root);
+
 const container = document.createElement('div');
 container.setAttribute('class', 'container');
 container.append(InputBook.init(), SearchBook.init(), ListBook.init());

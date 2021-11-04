@@ -1,4 +1,4 @@
-const searchBooks = (event: any) => {
+const searchBooks = (event: any): void => {
   const inputSearch = event.target.value.toLowerCase();
   const bookItem = document.querySelectorAll('.card');
 

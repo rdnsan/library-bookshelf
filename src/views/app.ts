@@ -11,8 +11,8 @@ const checkboxContainer = document.querySelector('.input-check');
 const checkbox = checkboxContainer?.querySelector('input') as HTMLInputElement;
 const label = checkboxContainer?.querySelector('label') as HTMLLabelElement;
 
-const checkboxValidation = () => {
-  if (checkbox.checked === true) {
+const checkboxValidation = (): void => {
+  if (checkbox.checked) {
     label.classList.add('is-check');
   } else {
     label.classList.remove('is-check');

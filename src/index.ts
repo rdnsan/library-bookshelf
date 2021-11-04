@@ -1,6 +1,7 @@
 import 'regenerator-runtime';
 import './components/Head';
-import './styles/app.scss';
+import './styles';
+// import './styles/app.scss';
 import './views/app';
 import registerSW from './utils/RegisterSW';
 import { addBook } from './views/controller';

@@ -43,7 +43,7 @@ const addBook = (): void => {
   updateDataToStorage();
 };
 
-const addBookToCompleted = (bookElement: any) => {
+const addBookToCompleted = (bookElement: any): void => {
   const listCompleted = document.getElementById(Config.COMPLETED_LIST_BOOK);
   const bookTitle = bookElement.firstChild.querySelector('h3')?.innerText;
   const bookAuthor = bookElement.firstChild.querySelector('p:first-of-type > span')?.innerText;
@@ -60,7 +60,7 @@ const addBookToCompleted = (bookElement: any) => {
   updateDataToStorage();
 };
 
-const removeBook = (bookElement: any) => {
+const removeBook = (bookElement: any): void => {
   const bookTitle = bookElement.firstChild.querySelector('h3')?.innerText;
   const confirmation = confirm(`Apakah anda yakin ingin menghapus buku ${bookTitle}?`);
   const bookPosition = findBookIndex(bookElement.bookId);
@@ -73,7 +73,7 @@ const removeBook = (bookElement: any) => {
   }
 };
 
-const undoBookFromCompleted = (bookElement: any) => {
+const undoBookFromCompleted = (bookElement: any): void => {
   const listUncompleted = document.getElementById(Config.UNCOMPLETED_LIST_BOOK);
   const bookTitle = bookElement.firstChild.querySelector('h3')?.innerText;
   const bookAuthor = bookElement.firstChild.querySelector('p:first-of-type > span')?.innerText;
