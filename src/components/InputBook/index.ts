@@ -1,4 +1,4 @@
-import Forms from '../Form';
+import Forms from '@components/Form';
 
 class InputBook {
   public static init() {

@@ -9,7 +9,6 @@ class Forms {
   ) {
     const div = document.createElement('div');
     div.setAttribute('class', 'input-group');
-
     div.innerHTML = `
       <label for="${htmlFor}">${label}</label>
       <input type="${inputType}" name="${name}" id="${id}" ${required} />
@@ -56,7 +55,7 @@ class Forms {
     button.setAttribute('type', 'submit');
     button.textContent = 'Masukan Buku';
 
-    const formComponent: any[] = [judul, penulis, tahun, isCompleted, button];
+    const formComponent = [judul, penulis, tahun, isCompleted, button];
 
     const formElement = document.createElement('form');
     formElement.setAttribute('name', 'input-book');

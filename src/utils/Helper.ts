@@ -1,5 +1,5 @@
-import Config from '../config';
-import alerts from './Alert';
+import Config from '@config';
+import alerts from '@utils/Alert';
 import makeBook from './modules/MakeBook';
 
 interface Book {
@@ -43,10 +43,7 @@ const updateDataToStorage = (): void => {
   }
 };
 
-// prettier-ignore
-const composeBookObj = ({
-  title, author, year, isCompleted
-}: Book): Book => ({
+const composeBookObj = ({ title, author, year, isCompleted }: Book): Book => ({
   id: +new Date(),
   title,
   author,

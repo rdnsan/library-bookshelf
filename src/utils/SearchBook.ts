@@ -3,8 +3,8 @@ const searchBooks = (event: any): void => {
   const bookItem = document.querySelectorAll('.card');
 
   bookItem.forEach((item) => {
-    const bookTitle = item?.firstChild?.firstChild?.textContent?.toLowerCase() as string;
-    // eslint-disable-next-line eqeqeq
+    const bookTitle =
+      item?.firstChild?.firstChild?.textContent?.toLowerCase() as string;
     if (bookTitle.indexOf(inputSearch) != -1) {
       item.setAttribute('style', 'display: flex;');
     } else {
