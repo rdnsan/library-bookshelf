@@ -128,7 +128,7 @@ const GlobalStyle = `
   .input-book .input-group input:focus {
     outline: none;
     border-color: var(--green);
-    box-shadow: 0 10px 20px -13px rgba(#207565, 0.35);
+    box-shadow: 0 10px 20px -13px rgba(32, 117, 101, 0.35);
   }
 
   .input-book .input-check {
@@ -244,12 +244,12 @@ const GlobalStyle = `
   }
 
   .list-book #uncompleted .card .action-button .check-btn {
-    ${mixins.ActionButtonIcon('https://cloud.digitboxtech.com/static/check.svg')}
+    ${mixins.ActionButtonIcon('/check.svg')}
     ${mixins.ActionButton}
   }
   
   .list-book #uncompleted .card .action-button .trash-btn {
-    ${mixins.ActionButtonIcon('https://cloud.digitboxtech.com/static/trash.svg')}
+    ${mixins.ActionButtonIcon('/trash.svg')}
     ${mixins.ActionButton}
   }
 
@@ -289,12 +289,12 @@ const GlobalStyle = `
     padding: 5px 0;
   }
   .list-book #completed .card .action-button .undo-btn {
-    ${mixins.ActionButtonIcon('https://cloud.digitboxtech.com/static/undo.svg')}
+    ${mixins.ActionButtonIcon('/undo.svg')}
     ${mixins.ActionButton}
   }
 
   .list-book #completed .card .action-button .trash-btn {
-    ${mixins.ActionButtonIcon('https://cloud.digitboxtech.com/static/trash.svg')}
+    ${mixins.ActionButtonIcon('/trash.svg')}
     ${mixins.ActionButton}
   }
 
