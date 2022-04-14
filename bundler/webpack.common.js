@@ -2,7 +2,6 @@ const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
-const Dotenv = require('dotenv-webpack');
 const DashboardPlugin = require('webpack-dashboard/plugin');
 
 /** @type {import('webpack').Configuration} */
@@ -68,7 +67,6 @@ const config = {
         '../public/static/icons/favicon-128x128.png'
       ),
     }),
-    new Dotenv(),
     new WebpackPwaManifest({
       name: 'Library Bookshelf',
       short_name: 'Library Bookshelf',
