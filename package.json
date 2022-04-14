@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "webpack-dashboard -- webpack serve --config bundler/webpack.dev.js",
     "build-local": "webpack-dashboard -- webpack --config bundler/webpack.prod.analyzer.js",
-    "build": "webpack-dashboard -- webpack --config bundler/webpack.prod.js",
+    "build": "webpack --config bundler/webpack.prod.js",
     "lint": "eslint ./src --ext .js,.ts"
   },
   "keywords": [],
